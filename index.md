@@ -1,37 +1,151 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+<title>ONLINE LIBRARY FOR ENGINEERS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="First_Page.css">
+<style>
 
-You can use the [editor on GitHub](https://github.com/loveyourdream/loveyourdream.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+body{
+	background-image: url("signinimg (2).jpg");
+    background-repeat:repeat ; 
+	background-attachment:fixed;
+	color:black;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
-### Markdown
+li {
+    float: left;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-```markdown
-Syntax highlighted code block
+li a:hover:not(.active) {
+    background-color: #111;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.active {
+    background-color: #4CAF50;
+}
+.continer{
+   width: 100px;
+   height: 450px;
+   margin: 40px auto;
+   padding: 10px;
+   box-sizing: border-box;
+   background-image: tip2.jpg;
+   box-shadow: 0 10px 15px -8px #000;
+   border: 2px black;
+   -webkit-border-radius:5px;
+   text-align: center;
+}
 
-- Bulleted
-- List
+</style>
+</head>
+<body>
+<ul>
+<li><a href="registration.html" title="Sign In">SignIn</a></li> 
+<li><a href="Login.php" title="Log In">LogIn</a></li> 
+<li><a href="ContactUs.html" title="Contact Us">Contact Us</a> </li> 
+<li><a href="Submit1.html" title="About_us">About_us</a></li>
+<li><a href="Help.html" title="Help">Help</a></li>
+<li><a href="Librarian.php" title="Librarian">Librarian</a>
+</ul>
 
-1. Numbered
-2. List
+<div class="intro" align=center>
+<h2 style="color:darkslategrey; font-size:50px; font-family:serif;"> WELCOME TO SOMAIYA LIBRARY...</h2>
+</div>    <hr>
 
-**Bold** and _Italic_ and `Code` text
+<div class="slideshow-container">
 
-[Link](url) and ![Image](src)
-```
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="plain(1).jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="plain(2).jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-### Jekyll Themes
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="plain(3).jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/loveyourdream/loveyourdream.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="plain(4).jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="plain(5).jpg" style="width:100%">
+  <div class="text"></div>
+</div>
 
-### Support or Contact
+</div>
+<br>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+   // window.setTimeout ("slideShow ("+slides+")",1000);
+ //window.setTimeout("slideShow("+slides+")",1000);
+}
+</script>
+<br>
+
+<footer align="bottom"><b>
+<p style="font-size:20px;">Posted by:Devanshi Doshi       Shivani Garud</p>
+<p style="font-size:20px;">Contact Information 1 :<a href="#">doshi.d@somaiya.edu</a></p>
+<p style="font-size:20px;">Contact Information 2 :<a href="#">s.garud@somaiya.edu</a></p></b>
+</footer>
+</body>
+</html>
+
+
