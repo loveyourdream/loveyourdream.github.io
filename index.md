@@ -1,53 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>ONLINE LIBRARY FOR ENGINEERS</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="First_Page.css">
-<style>
+h1{
+	color:red;
+	size:20px;
+	font-family:Trajan Pro;
+	text-align: center;
+}
+h2{
+	text-align:center;
+	color:red;
+	size:100px;
+	font-family:Cambria;
+}
 
-body{
-	background-image: url("signinimg (2).jpg");
-    background-repeat:repeat ; 
-	background-attachment:fixed;
+h3{
+	font-family:Hobo Std;
 	color:black;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+img {
+    opacity: 1.0
+    
 }
 
-li {
-    float: left;
+img:hover {
+    opacity: 0.7;
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-.continer{
-   width: 100px;
+continer{
+   width: 500px;
    height: 450px;
    margin: 40px auto;
-   padding: 10px;
+   padding: 50px;
    box-sizing: border-box;
    background-image: tip2.jpg;
    box-shadow: 0 10px 15px -8px #000;
@@ -56,41 +36,76 @@ li a:hover:not(.active) {
    text-align: center;
 }
 
-</style>
-</head>
-<body>
-<ul>
-<li><a href="registration.html" title="Sign In">SignIn</a></li> 
-<li><a href="Login.php" title="Log In">LogIn</a></li> 
-<li><a href="ContactUs.html" title="Contact Us">Contact Us</a> </li> 
-<li><a href="Submit1.html" title="About_us">About_us</a></li>
-<li><a href="Help.html" title="Help">Help</a></li>
-<li><a href="Librarian.php" title="Librarian">Librarian</a>
-</ul>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
 
-<div class="intro" align=center>
-<h2 style="color:darkslategrey; font-size:50px; font-family:serif;"> WELCOME TO SOMAIYA LIBRARY...</h2>
-</div>    <hr>
+/* Slideshow container */
+.slideshow-container {
+  //max-width: 1000px;
+  position: relative;
+  margin: auto;
+    width: 600px;
+    
+}
 
-<div class="slideshow-container">
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="plain(1).jpg" style="width:100%">
-  <div class="text"></div>
-</div>
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="plain(2).jpg" style="width:100%">
-  <div class="text"></div>
-</div>
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.2s ease;
+}
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="plain(3).jpg" style="width:100%">
-  <div class="text"></div>
-</div>
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
