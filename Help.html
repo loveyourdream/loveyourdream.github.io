@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Help</title>
+<link rel="stylesheet" type="text/css" href="Help.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".hide-btn").click(function(){
+        $("p").hide();
+    });
+    $(".show-btn").click(function(){
+        $("p").show();
+    });
+    $(".button").click(function(){
+        $("p").toggle();
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="image">
+<h1 style=" text-align:center; color:yellow;">We will be glad to help you..</h2>
+<br>
+<br>
+<center>
+<form>
+  <input type="text" name="search" placeholder="How we can help..??">
+<br>
+<br>
+  <input type="submit" name="se" value="Search">
+</form>
+</center>
+</div>
+<br>
+<br>
+     <button type="button" class="hide-btn">Show Less</button> 
+    <button type="button" class="show-btn">Show More</button>
+     <button type="button"class="button">Toggle</button>
+<p><b>Frequently asked questions....</b></p>
+<p>1.How to choose books..??</p>
+<p><b>Answer:</b><br>
+In the home page there is books in general of all our the branches.In category there is caregory wise books so if you want to show in general go and look at home page..</p>
+
+</body>
+</html>

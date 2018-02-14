@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IT</title>
+<style>
+.second {
+width:250px;
+height:300px;
+padding:5px;
+float:justify;
+border:3px dotted blue;
+margin:5px;
+
+}
+#id1{
+margin-left:60px;
+}
+#id2{
+margin-left:350px;
+margin-top:-70px;
+}
+#id3{
+margin-left:650px;
+margin-top:-70px;
+}
+#id4{
+margin-left:900px;
+margin-top:-80px;
+}
+.third{
+width:125px;
+padding:5px;
+float:justify;
+border:2px solid orange;
+color:darkturquoise;
+}
+body{
+background-image:url("1stpgimg.jpg");
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var x=0;
+    $("button").click(function(){
+   
+
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut("slow");
+        x=1;
+        if(x==1)
+{
+		$("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn("slow");
+        x=0;
+}
+});
+  $("#btn1").click(function(){
+        $("#box").animate({height: "500px"});
+    });
+    $("#btn2").click(function(){
+        $("#box").animate({height: "300px"});
+    });
+});
+
+</script>
+</head>
+<body>
+<h1 style="color:red;">Informatio And Technology</h1>
+<hr>
+<button>Click to fade </button>
+<hr>
+<br>
+<img src="IT1.jpg" hspace="50" class="second" id="div1">
+<img src="IT2.jpg" hspace="50" class="second" id="div2">
+<img src="IT3.jpg" hspace="50" class="second" id="div3">
+<img src="IT4.png" id="box" hspace="50"class="second">
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+<h3 id="id1" class="third">Java </h3><br>
+<h3 id="id2" class="third">Web Programming</h3>
+<h3 id="id3" class="third">Theory Of Computation</h3>
+<h3 id="id4" class="third">Database Management</h3>
+</body>
+</html>

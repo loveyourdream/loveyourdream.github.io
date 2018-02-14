@@ -1,0 +1,50 @@
+.image{
+	width:relative;
+	height:400px;
+	background-image:url(Help.jpg);
+}
+input[type=text] {
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=submit] {
+    width: 20%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+body{
+  	background-color:pink;
+	color:brown;
+}
+h3{
+	font-size:30px;
+	font-family:Lithos Pro;
+}
+p{
+	font-size:25px;
+	font-family:Harrington;
+}
+h1{
+	color:red;
+	size:20px;
+	font-family:Trajan Pro;
+	background-color:indigo;
+}
+
+
+

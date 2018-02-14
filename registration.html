@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form Using jQuery - Demo Preview</title>
+<meta name="robots" content="noindex, nofollow">
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="style.css"/>
+<!-- Include JS File Here -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="registration.js"></script>
+<style>
+body{
+	background-image: url("signinimg (2).jpg");
+	background-color:palegoldenrod;
+     background-image: url(1stpgimg.jpg);
+	background-repeat:repeat ; 
+	background-attachment:fixed;
+	color:black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="first">
+<ul>
+<li><a href="ContactUs.html" title="Contact Us">Contact Us</a> </li> 
+<li><a href="Submit1.html" title="About_us">About_us</a></li>
+<li><a href="Help.html" title="Help">Help</a></li> 
+    <li><a href="First_Page.html" title="Home">Home</a></li> 
+</ul>
+    </div>
+
+<div class="container" >
+<div class="main">
+<form class="form" method="post" action="#">
+<h2>Sign up</h2>
+<label>Name :</label>
+<input type="text" name="name" id="name">
+<label>Email :</label>
+<input type="text" name="email" id="email">
+<label>Password :</label>
+<input type="password" name="password" id="password">
+<label>Confirm Password :</label>
+<input type="password" name="cpassword" id="cpassword">
+<a href="Login.php">
+<input type="button" name="register" id="register" value="Register">
+</a>
+</form>
+</div>
+    </div>
+</body>
+</html>
